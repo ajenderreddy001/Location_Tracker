@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="273dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignRight="@+id/sign_in_button"
+        android:layout_toEndOf="@+id/editText"
+        android:contentDescription="APP LOGO"
+        android:layout_alignParentTop="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/logo"
+        android:layout_weight="0.83" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="15"
+        android:id="@+id/editText"
+        android:editable="true"
+        android:hint="Phone Number"
+        android:phoneNumber="true"
+        android:elegantTextHeight="true"
+        android:height="15dp"
+        android:textSize="25dp"
+        android:textColor="#05913b"
+        android:textColorHint="#8e0f13"
+        android:textAlignment="center"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:textStyle="bold|italic"
+        android:focusable="true"
+        android:gravity="clip_horizontal" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/textView"
+            android:layout_above="@+id/sign_in_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentBottom="false"
+            android:textSize="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible"
+            android:textColor="#FF096B1C"
+            android:textStyle="bold|italic"
+            android:gravity="center_horizontal" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/sync1"
+            android:layout_above="@+id/textView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginBottom="38dp"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/sync2"
+            android:layout_alignTop="@+id/sync1"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
